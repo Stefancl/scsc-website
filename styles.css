@@ -454,3 +454,28 @@ footer { padding:3.5rem 4vw; border-top:1px solid var(--border); display:flex; j
 .booking-page{padding-top:88px}.booking-intro{background:var(--paper);padding-bottom:3rem}.booking-intro h1{max-width:980px;font-family:var(--serif);font-weight:500;font-size:clamp(3.8rem,7vw,7rem);line-height:.92;letter-spacing:-.045em;margin:1rem 0 1.7rem}.booking-deck{max-width:760px;color:#5d574e;line-height:1.8;font-size:1.05rem}.booking-actions{margin-top:1.5rem}.booking-widget-section{background:var(--white);padding-top:4rem}.booking-widget-head{display:grid;grid-template-columns:1.05fr .95fr;gap:7vw;align-items:end;margin-bottom:3rem}.booking-widget-head h2{font-size:clamp(2.7rem,5vw,5rem);line-height:1;margin:1rem 0 0}.booking-widget-head>p{max-width:540px;color:#625c53;line-height:1.75}.simplybook-shell{background:#fff;border:1px solid var(--border);min-height:720px;padding:1rem;overflow:hidden}.booking-help{display:grid;grid-template-columns:1fr 1fr;gap:8vw;background:var(--paper-2);align-items:start}.booking-help h2{font-size:clamp(2.8rem,4.5vw,4.8rem);margin:1rem 0 0}.booking-help p{color:#565148;line-height:1.8;margin:0 0 1.5rem}@media(max-width:900px){.booking-page{padding-top:72px}.booking-intro{padding-bottom:2rem}.booking-widget-section{padding-top:3rem}.booking-widget-head,.booking-help{grid-template-columns:1fr;gap:2rem}.simplybook-shell{padding:.5rem;min-height:680px}}
 
 .booking-whatsapp-link{display:inline-block;margin-top:1.2rem}
+
+
+/* Booking flow spacing override */
+.booking-intro.section-pad {
+  min-height: 0 !important;
+  height: auto !important;
+  padding-top: 4rem !important;
+  padding-bottom: 2.5rem !important;
+  margin: 0 !important;
+}
+.booking-widget-section.section-pad {
+  min-height: 0 !important;
+  height: auto !important;
+  padding-top: 2.5rem !important;
+  margin: 0 !important;
+}
+@media (max-width: 900px) {
+  .booking-intro.section-pad {
+    padding-top: 3rem !important;
+    padding-bottom: 2rem !important;
+  }
+  .booking-widget-section.section-pad {
+    padding-top: 2rem !important;
+  }
+}
