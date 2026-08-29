@@ -177,17 +177,19 @@ footer { padding:3.5rem 4vw; border-top:1px solid var(--border); display:flex; j
 }
 .brand-logo {
   display: block;
-  width: 128px;
+  width: 118px;
   height: auto;
+  object-fit: contain;
 }
 .site-header:not(.scrolled) .brand {
   background: transparent;
   padding: 0;
   border-radius: 0;
+  box-shadow: none;
   color: inherit;
 }
 .footer-brand .brand-logo {
-  width: 160px;
+  width: 150px;
 }
 @media (max-width: 900px) {
   .brand-logo { width: 108px; }
