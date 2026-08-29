@@ -1,6 +1,5 @@
-// Replace with Sonia's WhatsApp number in international format, digits only.
-// Example South African format: 27821234567
-const WHATSAPP_NUMBER = "27820000000";
+// Sonia's WhatsApp number in international format, digits only.
+const WHATSAPP_NUMBER = "27729656121";
 
 const defaultMessage = encodeURIComponent(
   "Hi Sonia, I'd love to enquire about a photography session with SCSC."
