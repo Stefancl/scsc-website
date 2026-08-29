@@ -23,7 +23,16 @@ img { max-width: 100%; display: block; }
 .site-header.scrolled { background: rgba(244,239,230,.96); color: var(--ink); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); }
 .brand { display: inline-flex; flex-direction: column; gap: 2px; }
 .brand-mark { font-family: var(--serif); font-size: 1.9rem; letter-spacing: .08em; line-height: 1; }
-.brand-line { text-transform: uppercase; letter-spacing: .16em; font-size: .54rem; }
+.brand-line {
+  display:block;
+  margin-top:.35rem;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.58rem;
+  font-weight:700;
+  line-height:1;
+  white-space:nowrap;
+}
 .nav { display: flex; align-items: center; gap: 2rem; font-size: .82rem; }
 .nav a { opacity: .86; }
 .nav a:hover { opacity: 1; }
@@ -199,3 +208,6 @@ footer { padding:3.5rem 4vw; border-top:1px solid var(--border); display:flex; j
   .brand-logo { width: 108px; }
   .footer-brand .brand-logo { width: 134px; }
 }
+
+.site-header:not(.scrolled) .brand-line { color:#fff; }
+.site-header.scrolled .brand-line { color:var(--ink); }
