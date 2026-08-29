@@ -173,26 +173,23 @@ footer { padding:3.5rem 4vw; border-top:1px solid var(--border); display:flex; j
 
 /* SCSC logo asset */
 .brand {
-  gap: .25rem;
+  gap: 0;
 }
 .brand-logo {
   display: block;
-  width: 136px;
+  width: 128px;
   height: auto;
 }
 .site-header:not(.scrolled) .brand {
-  background: rgba(244,239,230,.94);
-  padding: .45rem .6rem .35rem;
-  border-radius: 10px;
-  color: var(--ink);
-}
-.site-header:not(.scrolled) .brand-line {
-  color: var(--ink);
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  color: inherit;
 }
 .footer-brand .brand-logo {
-  width: 170px;
+  width: 160px;
 }
 @media (max-width: 900px) {
-  .brand-logo { width: 112px; }
-  .footer-brand .brand-logo { width: 138px; }
+  .brand-logo { width: 108px; }
+  .footer-brand .brand-logo { width: 134px; }
 }
