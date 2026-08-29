@@ -63,6 +63,7 @@ em { font-weight:500; }
 .philosophy-words span {
   font-family:var(--serif);
   font-size:clamp(1.5rem,3vw,3rem);
+  font-weight:700;
   padding:0;
   border-right:0;
 }
