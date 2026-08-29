@@ -350,3 +350,101 @@ footer { padding:3.5rem 4vw; border-top:1px solid var(--border); display:flex; j
   .article-cta { padding: 2rem; }
   .article-figure img { height: 58vh; min-height: 380px; }
 }
+
+
+/* About Sonia page */
+.about-page { padding-top: 88px; }
+.about-hero {
+  display:grid;
+  grid-template-columns:1.08fr .92fr;
+  gap:7vw;
+  align-items:center;
+  background:var(--paper);
+}
+.about-hero h1 {
+  max-width:850px;
+  font-family:var(--serif);
+  font-weight:500;
+  font-size:clamp(3.8rem,7vw,7.2rem);
+  line-height:.92;
+  letter-spacing:-.045em;
+  margin:1rem 0 1.7rem;
+}
+.about-deck {
+  max-width:760px;
+  font-size:1.08rem;
+  line-height:1.85;
+  color:#5d574e;
+}
+.about-hero-photo {
+  min-height:720px;
+  background:url('https://images.unsplash.com/photo-1554048612-b6a482b2246c?auto=format&fit=crop&w=1200&q=85') center/cover;
+}
+.about-story { background:var(--white); }
+.about-belief {
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  min-height:760px;
+  background:var(--paper-2);
+}
+.about-belief-image {
+  min-height:680px;
+  background:url('https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1400&q=85') center/cover;
+}
+.about-belief-copy {
+  padding:8rem 7vw;
+  align-self:center;
+}
+.about-belief-copy h2,
+.about-study h2 {
+  font-size:clamp(2.8rem,5vw,5rem);
+  margin:1.2rem 0 1.6rem;
+  line-height:1;
+}
+.about-belief-copy p,
+.about-story p,
+.about-study p {
+  color:#565148;
+  line-height:1.85;
+}
+.about-thread { background:var(--ink); color:var(--white); }
+.about-thread .section-label { color:rgba(255,255,255,.7); }
+.about-thread-grid {
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:2rem;
+  margin-top:3rem;
+}
+.about-thread-grid > div {
+  border-top:1px solid rgba(255,255,255,.22);
+  padding-top:1.2rem;
+}
+.about-thread-grid span {
+  font-size:.62rem;
+  letter-spacing:.14em;
+  opacity:.6;
+}
+.about-thread-grid h3 {
+  font-family:var(--serif);
+  font-size:1.7rem;
+  font-weight:500;
+  margin:.8rem 0;
+}
+.about-thread-grid p {
+  line-height:1.7;
+  font-size:.9rem;
+  color:rgba(255,255,255,.72);
+}
+.about-study { background:var(--paper); }
+
+@media (max-width:900px){
+  .about-page { padding-top:72px; }
+  .about-hero,
+  .about-belief { grid-template-columns:1fr; }
+  .about-hero-photo,
+  .about-belief-image { min-height:62vh; }
+  .about-thread-grid { grid-template-columns:1fr 1fr; }
+}
+@media (max-width:560px){
+  .about-thread-grid { grid-template-columns:1fr; }
+}
