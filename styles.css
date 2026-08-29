@@ -139,3 +139,21 @@ footer { padding:3.5rem 4vw; border-top:1px solid var(--border); display:flex; j
 .faq summary::after { content: "+"; float: right; font-family: var(--sans); font-size: 1.2rem; }
 .faq details[open] summary::after { content: "–"; }
 .faq details p { max-width: 760px; margin: 1rem 0 .25rem; line-height: 1.75; color: #5e584f; }
+
+
+/* Dedicated service landing pages */
+.service-page { padding-top: 88px; }
+.service-hero { min-height: 62vh; display: flex; flex-direction: column; justify-content: center; background: var(--paper); }
+.service-hero h1 { max-width: 980px; font-family: var(--serif); font-weight: 500; font-size: clamp(3.5rem, 7vw, 7rem); line-height: .95; letter-spacing: -.04em; margin: 1rem 0 1.8rem; }
+.service-lead { max-width: 780px; line-height: 1.8; color: #5d574e; font-size: 1.05rem; margin-bottom: 2rem; }
+.service-content { display: grid; grid-template-columns: 1fr 1fr; gap: 8vw; align-items: start; border-top: 1px solid var(--border); }
+.service-content.alt { background: var(--paper-2); }
+.service-content h2 { font-size: clamp(2.4rem, 4vw, 4.3rem); margin: 0 0 1.2rem; }
+.service-content p { line-height: 1.8; color: #5d574e; }
+.service-facts { border-left: 1px solid var(--border); padding-left: 2rem; }
+.service-facts p { margin: 0; padding: .85rem 0; border-bottom: 1px solid var(--border); }
+@media (max-width: 900px) {
+  .service-page { padding-top: 72px; }
+  .service-content { grid-template-columns: 1fr; gap: 2.5rem; }
+  .service-facts { border-left: 0; border-top: 1px solid var(--border); padding-left: 0; padding-top: 1rem; }
+}
